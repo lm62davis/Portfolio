@@ -3,6 +3,7 @@
 WCCI Course Materials
 MENU
 Professional Portfolio with HTML and CSS
+
 Overview
 Create a portfolio site highlighting your work that can be shared with potential employers. Focus first on building a good structure, then later style and lay out with with CSS.
 
@@ -41,8 +42,7 @@ Include whatever other information you consider pertinent.
 Projects, consisting of at least three, each represented as an <article>
 
 name of project, linked to GitHub repository or the repository/project's GitHub Pages
-screenshot
-skills / technologies used
+screenshot skills / technologies used
 Don't worry that your available projects are limited now. You'll have time to increase the size of your portfolio.
 
 an appropriate <footer> element
@@ -90,6 +90,7 @@ Tag attributes
 Using images
 Creating Links
 Using proper tag names
+
 The CSS show understanding of:
 
 Selectors
@@ -125,3 +126,20 @@ Proper indentation.
 Use of variables for colors schema.
 Syntactically correct.
 © We Can Code IT 2020
+///////////////////////////////////////////////////////
+previous border -- border: 5px solid rgb(82, 34, 97);
+h1 border -- width: fit-content;
+purple border -- padding: 10px;
+Me.jpg -- opacity="0.5"
+a {
+color: #ebe6eb;
+background-color: #22315a;
+transition: all 1s ease-out;
+border-radius: 10px;
+}
+a:focus,
+a:hover {
+color: #22315a;
+background-color: #ebe6c6;
+border-radius: 10px;
+}
