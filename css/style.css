@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+img,
+h1,
+h3,
+h4 {
+  border: 5px solid rgb(82, 34, 97);
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.enlarge {
+  width: 350px;
+  height: auto;
+  transition: width height 2s;
+}
+.enlarge:hover {
+  width: 500px;
+  height: 400px;
+}
+nav {
+  text-align: justify;
+  display: inline-block;
+}
+.main {
+  text-align: left;
+  font-size: 20px;
+}
+.item2 > img {
+  width: 350px;
+  height: 300px;
+}
+.item2 > img:hover {
+  width: 600px;
+  height: auto;
+}
+.item3 > img {
+  width: 350px;
+  height: 300px;
+}
+.item3 > img:hover {
+  width: 600px;
+  height: auto;
+}
+.item7 > img {
+  margin-top: 25px;
+}
+.skills {
+  list-style-type: circle;
+}
+contact {
+  color: none;
+  background-color: none;
+  transition: none;
+}
+footer {
+  font-size: 0.75em;
+  text-align: right;
+}

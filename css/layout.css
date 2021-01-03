@@ -1,0 +1,45 @@
+.bodybg {
+  background-color: #bfe0e0;
+}
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: menu1;
+}
+.item3 {
+  grid-area: menu2;
+}
+.item4 {
+  grid-area: menu3;
+}
+.item5 {
+  grid-area: menu4;
+}
+.item6 {
+  grid-area: main;
+}
+.item7 {
+  grid-area: right;
+}
+.item8 {
+  grid-area: footer;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu1 main main main main right"
+    "menu2 main main main main right"
+    "menu3 main main main main right"
+    "menu4 footer footer footer footer footer";
+  justify-content: space-evenly;
+  align-content: space-between;
+  grid-gap: 10px;
+  padding: 10px;
+}
+.grid-container > div {
+  padding: 0 10px;
+  font-size: 20px;
+  text-align: center;
+}

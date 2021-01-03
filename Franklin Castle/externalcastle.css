@@ -1,0 +1,25 @@
+body {background: #996633; color: #FFFFEE; font-size: 12pt;}
+
+a:link {color: white}
+a:active {color: black}
+a:visited {color: #FFCC99}
+a:hover {color:silver}
+
+h1{color: white; font-family: copperplate gothic bold,arial black,sans-serif;}
+h2{font-family: copperplate gothic light, arial black, sans-serif;}
+h3{font-family: copperplate gothic light, arial black, sans-serif;}
+
+p {font-family: "Book Antiqua", Georgia, "Times New Roman", Times, serif; font-size: 12pt;}
+
+p:first-letter {font-size: 125%}
+
+.indent{margin: .5em .5em .5em 1em;}
+
+#bold{margin: .5em .5em .5em 12em; font-weight: bold;}
+
+@page {size: 8.5in 11in; margin: 0.5in;}
+li {page-break-inside: avoid; font-family: Georgia, "Times New Roman", Times, serif; font-size: 16px; }
+
+.style1 {font-family: Georgia, "Times New Roman", Times, serif; font-size: 12px; }
+.style2 {font-family: "Book Antigua", Georgia, "Times New Roman", Times, serif; font-size: 10px; }
+.style3 {font-family: Georgia, "Times New Roman", Times, serif; font-size: 16px; }
