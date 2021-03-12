@@ -8,6 +8,7 @@
     <meta name="description"
         content="Portfolio showcasing my abilities in HTML, CSS, Javascript and Java. Links to my LinkedIn and GitHub profiles." />
     <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/png" href="images/L2_Logo.png">
     <link rel="stylesheet" href="css\layout.css">
     <link rel="stylesheet" href="css\style.css">
     <style>
@@ -15,24 +16,67 @@
     </style>
 </head>
 
-<body class="bodybg">
+<body class="bodybg" id="adjust">
 
     <div class="grid-container">
         <div class="item1">
             <h1 id="top">Linda Martinez Davis<br>
                 Portfolio</h1>
             <nav>
-                <button class="buttons"><a href="#projects">&nbsp;Recent Projects &nbsp;|</a></button>
-                <button class="buttons"><a href="#about">&nbsp;About Me&nbsp;|</a></button>
-                <button class="buttons"><a href="#contact">&nbsp;Contact Info&nbsp;|</a></button>
+                <button class="buttons"><a href="#projects">Recent Projects</a></button>
+                <button class="buttons" id="about">About Me</button>
+                <button class="buttons"><a href="#contact">Contact Info</a></button>
             </nav>
         </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal active">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>About Me</h2>
+                    <span class="close">&times;</span>
+                </div>
+                <p> I've always been curious about how things function. When I was 8 years old I was shocked while
+                    dismantling an electric outlet with a butter knife. At twelve, I dismantled a transitor radio to see
+                    how
+                    it worked.
+                </p>
+                <p>My first job was as a data transcriber at the local Social Security office. My desk was next to
+                    the server, which was about the size of a walk-in freezer. Ocassionally it malfunctioned and the
+                    service tech would come out. I regularly inquired about the cause of the malfunction and his
+                    approach
+                    in fixing it. This gave me the confidence later to upgrade RAM, replace the motherboard or perform
+                    other
+                    hardware fixes on
+                    my pc. </p>
+                <p>For awhile, my career path wasn't in technology but, I always kept coming back to it. I maintained a
+                    small foothold by helping friends, family, and even a small business with their hardware and
+                    software needs. </p>
+                <p>Eventually I discovered that my true love was in software development. It amazes me that with just a
+                    little
+                    change in code you get a
+                    whole new look or functionality to any project. As a people-person who embraces technology, the
+                    fusion of programming, creativity,
+                    and
+                    accessibility really speak to me.</p>
+                <p>First I focused my attention on front-end applications and web design.
+                    I attained web design certification from the Certified Internet Web Masters Association. Later I
+                    took several Computer Science courses at Cuyahoga Community College. Most recently I graduated from
+                    the We Can
+                    Code It Software Developer Bootcamp. </p>
+                <p> Now with back-end development in my toolkit, I'm able to create
+                    fully functional apps and websites. Some projects showcasing my abilities are shown here. Allow me
+                    to demonstrate my
+                    skillset on your programming needs.</p>
+            </div>
+        </div>
+
         <div class="item2">
-            <!-- <img src="images\LMD-logo.jpg" id="logo" alt="logo" /> -->
+            <img src="images\L2_Logo.png" id="logo" alt="L2 logo" height="100px" width="100px" />
             <h3 id="projects">Recent Projects</h3>
 
             <p>Java - Fizz Buzz Qix </p>
-            <img src="images\FizzBuzzQix Screenshot.png" alt="FizzBuzzQix" />
+            <img src="images\FizzBuzzQix Screenshot.png" alt="Fizz Buzz Qix Screenshot" />
             <br>
             <a href="https://github.com/2020-Winter-Cohort/module-1-week-4-fizz-buzz-qix-lite-lm62davis">Fizz Buzz Qix
                 GitHub Repo</a>
@@ -40,7 +84,7 @@
         </div>
         <div class="item3">
             <p>Java - Virtual Pet Shelter</p>
-            <img src="images\VirtualPetScreenshot2.png" alt="Virtual Pet Shelter" />
+            <img src="images\VirtualPetScreenshot2.png" alt="Virtual Pet Shelter Screenshot" />
             <br>
             <a href="https://github.com/2020-Winter-Cohort/module-1-week-4-virtual-pet-shelter-biggerbytesshelter">Virtual
                 Pet Shelter Github Repo</a>
@@ -49,69 +93,37 @@
             <p>HTML/CSS/Javascript - Franklin Castle Website</p>
 
             <a href="Franklin Castle\castle.html" target="_blank"><img src="images\FranklinSS.png" width="400px"
-                    height="200px" alt="Franklin Castle Website" /> </a>
-
-            <a href="Franklin Castle\castle.html" target="_blank"><img
-                    src="images\franklincastle.gif" width="150px" height="150px"
-                    alt="Franklin Castle Website" /> </a>
+                    height="200px" alt="Franklin Castle Website Screenshot" /> </a>
 
         </div>
         <div class="item5">
             <p>HTML/CSS/Javascript - Kaufman Travel Website</p>
             <a href="Kaufman Travel\kthome.htm" target="_blank">
 
-                <img src="images\KaufmanSS.png" width="350px" height="300px" alt="Kaufman Travel Website" /> </a>
-
-                <img src="images\beach.jpg" width="150px" height="150px"
-                    alt="Kaufman Travel Website" /> </a>
+                <img src="images\KaufmanSS.png" width="350px" height="300px" alt="Kaufman Travel Website Screenshot" />
+            </a>
 
         </div>
         <div class="item6">
-            <h3 id="about">About Me</h3>
-            <section class="main">
-                <p> I've always been curious about how things function. When I was 12 years old, I dismantled a
-                    transitor
-                    radio to see it's inner workings. I had to know how a box could deliver the sounds of distant
-                    people, music, and ideas. </p>
-                <p>My first job was as a data transcriber at the local Social Security office. My desk was next to
-                    the server, which was about the size of a walk-in freezer. Ocassionally it malfunctioned and the
-                    service
-                    tech
-                    would come out. I constantly quizzed him on the cause of the malfunction. We became good friends and
-                    he taught me
-                    simple hardware fixes. </p>
-                <p>Although my initial career path wasn't in technology, I always kept coming back to it. I maintained a
-                    small foothold by helping friends,
-                    family, and even a small business with their hardware and software issues. </p>
-                <p>Over the years I discovered that my true love was in software. Just change a little code and get a
-                    whole new look
-                    or functionality to your project. So I focused my attention on front-end applications and web
-                    design. As a people-person who
-                    embraces technology, the fusion of programming and creativity really spoke to me.
-                    So first I attained the Certified Internet Web Masters Web Design Certification. Most recently I
-                    graduated from the We Can
-                    Code It! Software Developer Bootcamp.</p>
-                <p>Some projects showcasing my abilities are shown here. Allow me to demonstrate my
-                    newfound
-                    skillset on your
-                    programming needs.</p>
 
+            <section class="main">
 
                 <p>My proficencies are in:</p>
                 <ul class="skills">
                     <li>HTML</li>
                     <li>CSS</li>
-                    <li>Flexbox</li>
-                    <li>Grid</li>
                     <li>Java</li>
                     <li>Javascript</li>
                     <li>OOP</li>
                     <li>Spring</li>
+                    <li>React</li>
                     <li>TDD</li>
-                    <li>GIT</li>
+                    <li>Git</li>
                     <li>GitHub</li>
                     <li>IntelliJ</li>
+                    <li>Clean Code</li>
                     <li>Visual Studio Code</li>
+                    <li>Accessible Web Design</li>
                     <li>Responsive Design Techniques</li>
                 </ul>
             </section>
@@ -119,24 +131,23 @@
 
 
         <div class="item7">
-            <br>
-            <img src="images\Me.jpg" alt="Linda Martinez Davis" width="250px" height=auto />
+            <img class="me" src="images\Me.jpg" alt="Me-Linda Martinez Davis" width="250px" height=auto />
 
         </div>
 
         <div class="item8">
             <br>
             <h4 id="contact">Contact Info</h4>
-            <p><a href="mailto:LindaMartinezDavis@gmail.com">LindaMartinezDavis@gmail.com</a> &nbsp;
+            <p><a href="mailto:LindaMartinezDavis@gmail.com" id="email">LindaMartinezDavis@gmail.com</a> &nbsp;
                 216.800.8013 &nbsp; Cleveland, Ohio 44102</p>
             <a href="https://www.linkedin.com/in/linda-martinez-davis-57457911/">
-                <img src="images\LI-In-Bug.png" width="25px" height="25px" /></a>
-
-            <a href="https://lm62davis.github.io\lm62davis.github.io">
+                <img src="images\LI-In-Bug.png" width="25px" height="25px" alt="LinkedIn Logo" /></a>
 
             <a href="https://lm62davis.github.io">
+                <img src="images\GitHub-Octocat.png" width="25px" height="25px" alt="GitHub Logo" /></a>
+            <a href="https://twitter.com/LindaMartiDavis?s=09">
+                <img src="images/twitter.png" width="25px" height="25px" alt="Twitter Logo" /></a>
 
-                <img src="images\GitHub-Octocat.png" width="25px" height="25px" /></a>
             <br>
             <br>
 
@@ -146,6 +157,7 @@
                 </p>
             </footer>
         </div>
+        <script src="js/app.js"></script>
 </body>
 
 </html>

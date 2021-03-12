@@ -1,5 +1,6 @@
 .bodybg {
-  background-color: #bfe0e0;
+  background-color: #dbffff;
+  /* background-image: url("/images/artisto36.jpg"); */
 }
 .item1 {
   grid-area: header;

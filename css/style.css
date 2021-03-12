@@ -1,13 +1,74 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 .item7 > img,
-h1,
 h3,
 h4 {
-  border: 5px solid rgb(82, 34, 97);
+  border: 1px solid rgb(82, 34, 97);
   border-radius: 10px;
   box-sizing: border-box;
   text-align: center;
 }
+h2 {
+  color: rgb(82, 34, 97);
+}
+.me {
+  border: 5px solid rgb(82, 34, 97);
+  border-radius: 10%;
+  box-sizing: border-box;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: absolute;
+  z-index: 1;
+  top: 25%;
+  left: 35%;
+  right: 25%;
+  bottom: auto;
+  transform: translate(-50% -50%);
+  transition-delay: 500ms; /* Need to fix - doesn't transition */
+  width: 40%;
+  height: 80%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #481bb1; /* Fallback color */
+  border: 0.25em solid rgb(82, 34, 97);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.modal:active {
+  transform: translate(-50% -50%) scale(1);
+}
+/* Modal Header */
+.modal-header {
+  padding: 0.25em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgb(82, 34, 97);
+}
+/* Modal Content */
+.modal-content {
+  background-color: #dbffff;
+  margin: auto;
+  padding: 2%;
+  border: 1px solid #888;
+  width: 95%;
+  text-align: left;
+}
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+/* Modal hover */
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .enlarge {
   width: 350px;
   height: auto;
@@ -22,12 +83,27 @@ nav {
   display: inline-block;
 }
 .buttons {
-  background-color: bisque;
+  background-color: #481bb1;
   font-size: 1em;
+  color: aliceblue;
+  text-align: center;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+#email {
+  color: black;
+}
+#email:hover {
+  font-weight: bold;
 }
 .main {
   text-align: left;
-  font-size: 20px;
+  font-size: 1em;
 }
 #logo {
   width: 200px;
@@ -54,7 +130,7 @@ nav {
 .skills {
   list-style-type: circle;
 }
-contact {
+#contact {
   color: none;
   background-color: none;
   transition: none;
