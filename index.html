@@ -9,35 +9,38 @@
         content="Portfolio showcasing my abilities in HTML, CSS, Javascript and Java. Links to my LinkedIn and GitHub profiles." />
     <meta name="robots" content="index, follow">
     <link rel="icon" type="image/png" href="images/L2_Logo.png">
-    <link rel="stylesheet" href="css\layout.css">
-    <link rel="stylesheet" href="css\style.css">
-    <style>
-
-    </style>
+    <!-- <link rel="stylesheet" href="css/animations.css"> -->
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style></style>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 </head>
 
 <body class="bodybg" id="adjust">
 
-    <div class="grid-container">
+    <div class="grid-container" id="blur">
+
         <div class="item1">
+            <img src="images\L2_Logo.png" id="logo" alt="L2 logo" height="100px" width="100px" />
             <h1 id="top">Linda Martinez Davis<br>
                 Portfolio</h1>
             <nav>
                 <button class="buttons"><a href="#projects">Recent Projects</a></button>
-                <button class="buttons" id="about">About Me</button>
+                <button class="buttons" id="about" onclick="toggle()">About Me</button>
                 <button class="buttons"><a href="#contact">Contact Info</a></button>
             </nav>
         </div>
         <!-- The Modal -->
-        <div id="myModal" class="modal active">
+        <div id="myModal" class="modal">
             <!-- Modal content -->
-            <div class="modal-content">
+            <div class="modal-content" id="popup">
                 <div class="modal-header">
                     <h2>About Me</h2>
-                    <span class="close">&times;</span>
+                    <span class="close" onclick="toggle()">&times;</span>
                 </div>
                 <p> I've always been curious about how things function. When I was 8 years old I was shocked while
-                    dismantling an electric outlet with a butter knife. At twelve, I dismantled a transitor radio to see
+                    dismantling an electric outlet with a butter knife. At twelve, I dismantled a transitor radio to
+                    see
                     how
                     it worked.
                 </p>
@@ -45,14 +48,17 @@
                     the server, which was about the size of a walk-in freezer. Ocassionally it malfunctioned and the
                     service tech would come out. I regularly inquired about the cause of the malfunction and his
                     approach
-                    in fixing it. This gave me the confidence later to upgrade RAM, replace the motherboard or perform
+                    in fixing it. This gave me the confidence later to upgrade RAM, replace the motherboard or
+                    perform
                     other
                     hardware fixes on
                     my pc. </p>
-                <p>For awhile, my career path wasn't in technology but, I always kept coming back to it. I maintained a
+                <p>For awhile, my career path wasn't in technology but, I always kept coming back to it. I
+                    maintained a
                     small foothold by helping friends, family, and even a small business with their hardware and
                     software needs. </p>
-                <p>Eventually I discovered that my true love was in software development. It amazes me that with just a
+                <p>Eventually I discovered that my true love was in software development. It amazes me that with
+                    just a
                     little
                     change in code you get a
                     whole new look or functionality to any project. As a people-person who embraces technology, the
@@ -61,45 +67,44 @@
                     accessibility really speak to me.</p>
                 <p>First I focused my attention on front-end applications and web design.
                     I attained web design certification from the Certified Internet Web Masters Association. Later I
-                    took several Computer Science courses at Cuyahoga Community College. Most recently I graduated from
+                    took several Computer Science courses at Cuyahoga Community College. Most recently I graduated
+                    from
                     the We Can
                     Code It Software Developer Bootcamp. </p>
                 <p> Now with back-end development in my toolkit, I'm able to create
-                    fully functional apps and websites. Some projects showcasing my abilities are shown here. Allow me
+                    fully functional apps and websites. Some projects showcasing my abilities are shown here. Allow
+                    me
                     to demonstrate my
                     skillset on your programming needs.</p>
             </div>
         </div>
-
         <div class="item2">
-            <img src="images\L2_Logo.png" id="logo" alt="L2 logo" height="100px" width="100px" />
+
             <h3 id="projects">Recent Projects</h3>
+            <p>Date Night App (Javascript/APIs)</p>
+            <a href="https://github.com/2020-Winter-Cohort/final-project-nov-cohort-team-date-night-app.git"></a>
+            <img src="images/DateNightApp.png" alt="Date Night App Screenshot" />
 
-            <p>Java - Fizz Buzz Qix </p>
-            <img src="images\FizzBuzzQix Screenshot.png" alt="Fizz Buzz Qix Screenshot" />
-            <br>
-            <a href="https://github.com/2020-Winter-Cohort/module-1-week-4-fizz-buzz-qix-lite-lm62davis">Fizz Buzz Qix
-                GitHub Repo</a>
-
+            <p>Donut Maker (Javascript/BEM)</p>
+            <a href="https://github.com/2020-Winter-Cohort/module-4---donut-maker-lm62davis.git"></a>
+            <img src="images/DonutMaker.png" alt="Donut Maker App Screenshot" />
         </div>
         <div class="item3">
-            <p>Java - Virtual Pet Shelter</p>
-            <img src="images\VirtualPetScreenshot2.png" alt="Virtual Pet Shelter Screenshot" />
-            <br>
-            <a href="https://github.com/2020-Winter-Cohort/module-1-week-4-virtual-pet-shelter-biggerbytesshelter">Virtual
-                Pet Shelter Github Repo</a>
+            <p>Boot Camp Blog (Thymeleaf)</p>
+            <img src="images/BootCampBlog.png" alt="Boot Camp Blog Screenshot" />
+
+            <p>Fizz Buzz Qix (Java)</p>
+            <img src="images/FizzBuzzQix Screenshot.png" alt="Fizz Buzz Qix Screenshot" />
         </div>
         <div class="item4">
-            <p>HTML/CSS/Javascript - Franklin Castle Website</p>
+            <p>Franklin Castle Website <br> (HTML/CSS/JavaScript)</p>
 
             <a href="Franklin Castle\castle.html" target="_blank"><img src="images\FranklinSS.png" width="400px"
                     height="200px" alt="Franklin Castle Website Screenshot" /> </a>
-
         </div>
         <div class="item5">
-            <p>HTML/CSS/Javascript - Kaufman Travel Website</p>
+            <p>Kaufman Travel Website (HTML/CSS/JavaScript)</p>
             <a href="Kaufman Travel\kthome.htm" target="_blank">
-
                 <img src="images\KaufmanSS.png" width="350px" height="300px" alt="Kaufman Travel Website Screenshot" />
             </a>
 
@@ -158,6 +163,9 @@
             </footer>
         </div>
         <script src="js/app.js"></script>
+
+
+        </script>
 </body>
 
 </html>

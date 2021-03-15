@@ -16,6 +16,7 @@ var span = document.getElementsByClassName("close")[0];
 
 aboutBtn.onclick = function() {
   modal.style.display = "block";
+  aboutBtn.addClass("pullDown");
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -29,4 +30,10 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}
+function toggle() {
+  var blur = document.getElementById('blur');
+  blur.classList.toggle('active');
+  var popup = document.getElementById('popup');
+  popup.classList.toggle('active');
 }

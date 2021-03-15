@@ -1,25 +1,31 @@
 .bodybg {
   background-color: #dbffff;
-  /* background-image: url("/images/artisto36.jpg"); */
 }
+/* Header and Nav buttons */
 .item1 {
   grid-area: header;
 }
+/* DNA and Donut Maker */
 .item2 {
-  grid-area: menu1;
+  grid-area: recentApps;
 }
+/* Boot Camp Blog and Fizz Buzz Qix  */
 .item3 {
-  grid-area: menu2;
+  grid-area: prevApps;
 }
+/* Franklin Castle */
 .item4 {
-  grid-area: menu3;
+  grid-area: fcWebsite;
 }
+/* Kaufman website */
 .item5 {
-  grid-area: menu4;
+  grid-area: ktWebsite;
 }
+/* Main - proficiencies */
 .item6 {
   grid-area: main;
 }
+/* My photo */
 .item7 {
   grid-area: right;
 }
@@ -30,10 +36,10 @@
   display: grid;
   grid-template-areas:
     "header header header header header header"
-    "menu1 main main main main right"
-    "menu2 main main main main right"
-    "menu3 main main main main right"
-    "menu4 footer footer footer footer footer";
+    "recentApps recentApps recentApps recentApps main right"
+    "prevApps prevApps prevApps prevApps main right"
+    "prevApps prevApps prevApps prevApps main right"
+    "fcWebsite fcWebsite ktWebsite ktWebsite ktwwbsite footer";
   justify-content: space-evenly;
   align-content: space-between;
   grid-gap: 10px;

@@ -2,16 +2,16 @@
 .item7 > img,
 h3,
 h4 {
-  border: 1px solid rgb(82, 34, 97);
+  border: 2px solid #281277;
   border-radius: 10px;
   box-sizing: border-box;
   text-align: center;
 }
 h2 {
-  color: rgb(82, 34, 97);
+  color: #281277;
 }
 .me {
-  border: 5px solid rgb(82, 34, 97);
+  border: 5px solid #281277;
   border-radius: 10%;
   box-sizing: border-box;
 }
@@ -20,22 +20,25 @@ h2 {
   display: none; /* Hidden by default */
   position: absolute;
   z-index: 1;
-  top: 25%;
-  left: 35%;
+  top: 36%;
+  left: 46%;
   right: 25%;
   bottom: auto;
   transform: translate(-50% -50%);
-  transition-delay: 500ms; /* Need to fix - doesn't transition */
+  transition: 200ms; /* Need to fix - doesn't transition */
   width: 40%;
-  height: 80%;
+  height: 100%;
   overflow: auto; /* Enable scroll if needed */
-  background-color: #481bb1; /* Fallback color */
-  border: 0.25em solid rgb(82, 34, 97);
+  background-color: #281277; /* Fallback color */
+  border: 2px solid #281277;
   border-radius: 10px;
   box-sizing: border-box;
 }
 .modal:active {
-  transform: translate(-50% -50%) scale(1);
+  transform: translate(-50% -50%) scale(2);
+  visibility: visible;
+  opacity: 1;
+  transition: 200ms;
 }
 /* Modal Header */
 .modal-header {
@@ -68,7 +71,11 @@ h2 {
   text-decoration: none;
   cursor: pointer;
 }
-
+#blur.active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
 .enlarge {
   width: 350px;
   height: auto;
@@ -83,7 +90,7 @@ nav {
   display: inline-block;
 }
 .buttons {
-  background-color: #481bb1;
+  background-color: #281277;
   font-size: 1em;
   color: aliceblue;
   text-align: center;
@@ -106,13 +113,14 @@ a {
   font-size: 1em;
 }
 #logo {
-  width: 200px;
-  height: 185px;
+  width: 150px;
+  height: 150px;
+  float: left;
 }
 
 .item2 > img,
 .item3 > img {
-  width: 350px;
+  width: 400px;
   height: 300px;
   border-radius: 10px;
   box-sizing: border-box;
@@ -125,7 +133,7 @@ a {
 
 .item7 > img,
 .item8 {
-  margin-top: 50px;
+  margin-top: 25px;
 }
 .skills {
   list-style-type: circle;
