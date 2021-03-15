@@ -31,6 +31,7 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+//Work in progress
 function toggle() {
   var blur = document.getElementById('blur');
   blur.classList.toggle('active');
