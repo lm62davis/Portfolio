@@ -20,9 +20,9 @@ h2 {
   display: none; /* Hidden by default */
   position: absolute;
   z-index: 1;
-  top: 36%;
-  left: 46%;
-  right: 25%;
+  top: 20%;
+  left: 30%;
+  right: 45%;
   bottom: auto;
   transform: translate(-50% -50%);
   transition: 200ms; /* Need to fix - doesn't transition */
@@ -111,12 +111,23 @@ a {
 .main {
   text-align: left;
   font-size: 1em;
+  margin-top: 20%;
 }
 #logo {
   width: 150px;
   height: 150px;
   float: left;
+  border-radius: 10%;
 }
+/* .item2,
+.item3,
+.item4,
+.item5,
+.item6,
+.item7,
+.item8 {
+  border: #000 solid 2px;
+} */
 
 .item2 > img,
 .item3 > img {
@@ -146,4 +157,56 @@ a {
 footer {
   font-size: 0.75em;
   text-align: right;
+}
+.title {
+  font-size: 2em;
+  transition: 3s ease-in;
+  text-align: center;
+  margin: 0% 0% 2% 0%;
+  background-color: #f3ec78;
+  background-image: linear-gradient(45deg, #dbffff, #281277);
+  background-clip: text;
+  letter-spacing: 0.5em;
+  animation: spacing 5s ease-in;
+}
+.item4,
+.item5 {
+  flex: 0 0 auto;
+}
+.item4 > img,
+.item5 > img {
+  margin-right: 15px;
+}
+
+.slider {
+  margin: 50px auto;
+  width: 50%;
+}
+.image-box {
+  height: 300px;
+  width: 450px;
+  background-color: #b7f1f1;
+  border: solid 4px #281277;
+  border-radius: 5%;
+}
+image-box img {
+  width: 100%;
+}
+.projectButton {
+  border: none;
+  outline: none;
+  background-color: #281277;
+  padding: 10px;
+  font-size: 1em;
+  color: aliceblue;
+  cursor: pointer;
+  margin: 10px auto;
+  text-align: center;
+  border-radius: 10%;
+}
+.projectButton:hover {
+  background: #111;
+}
+img {
+  border-radius: 4%;
 }

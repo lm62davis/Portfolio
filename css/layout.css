@@ -39,11 +39,11 @@
     "recentApps recentApps recentApps recentApps main right"
     "prevApps prevApps prevApps prevApps main right"
     "prevApps prevApps prevApps prevApps main right"
-    "fcWebsite fcWebsite ktWebsite ktWebsite ktwwbsite footer";
+    "fcWebsite fcWebsite ktWebsite ktWebsite ktWebsite footer";
   justify-content: space-evenly;
   align-content: space-between;
-  grid-gap: 10px;
-  padding: 10px;
+  grid-gap: 5px;
+  padding: 5px;
 }
 .grid-container > div {
   padding: 0 10px;

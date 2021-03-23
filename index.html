@@ -20,7 +20,7 @@
     <div class="grid-container" id="blur">
         <div class="item1">
             <img src="images\L2_Logo.png" id="logo" alt="L2 logo" height="100px" width="100px" />
-            <h1 id="top">Linda Martinez Davis<br>
+            <h1 id="top" class="title">Linda Martinez Davis<br>
                 Portfolio</h1>
             <nav>
                 <button class="buttons"><a href="#projects">Recent Projects</a></button>
@@ -38,9 +38,7 @@
                 </div>
                 <p> I've always been curious about how things function. When I was 8 years old I was shocked while
                     dismantling an electric outlet with a butter knife. At twelve, I dismantled a transitor radio to
-                    see
-                    how
-                    it worked.
+                    see how it worked. (This time without a power source.)
                 </p>
                 <p>My first job was as a data transcriber at the local Social Security office. My desk was next to
                     the server, which was about the size of a walk-in freezer. Ocassionally it malfunctioned and the
@@ -92,19 +90,29 @@
             <img src="images/BootCampBlog.png" alt="Boot Camp Blog Screenshot" />
 
             <p>Fizz Buzz Qix (Java)</p>
-            <img src="images/FizzBuzzQix Screenshot.png" alt="Fizz Buzz Qix Screenshot" />
+            <img src="images/FizzBuzzQix.png" alt="Fizz Buzz Qix Screenshot" />
         </div>
-        <div class="item4">
-            <p>Franklin Castle Website <br> (HTML/CSS/JavaScript)</p>
+        <div class="slider">
+            <div class="image-box">
+                <!-- <div class="item4"> -->
+                <!-- <p>Franklin Castle Website <br> (HTML/CSS/JavaScript)</p> -->
 
-            <a href="Franklin Castle/castle.html" target="_blank"><img src="images/FranklinSS.png" width="400px"
-                    height="200px" alt="Franklin Castle Website Screenshot" /> </a>
-        </div>
-        <div class="item5">
-            <p>Kaufman Travel Website (HTML/CSS/JavaScript)</p>
-            <a href="Kaufman Travel/kthome.htm" target="_blank">
-                <img src="images/KaufmanSS.PNG" width="350px" height="300px" alt="Kaufman Travel Website Screenshot" />
-            </a>
+                <!-- <a href="Franklin Castle/castle.html" target="_blank"> -->
+
+                <img src="images/FranklinSS.PNG" width="450px" height="300px" alt="One of my projects"
+                    class="slider-image" />
+                <!-- </a> -->
+                <!-- </div> -->
+                <!-- <div class="item5"> -->
+                <!-- <p>Kaufman Travel Website (HTML/CSS/JavaScript)</p> -->
+                <!-- <a href="Kaufman Travel/kthome.htm" target="_blank">
+                        <img src="images/KaufmanSS.PNG" width="450px" height="300px"
+                            alt="Kaufman Travel Website Screenshot" />
+                    </a>
+                </div> -->
+            </div>
+            <button class="projectButton" onclick="prev()"> &LT; Prev</button>
+            <button class="projectButton" onclick="next()">Next &GT; </button>
         </div>
         <div class="item6">
             <section class="main">
@@ -121,7 +129,6 @@
                     <li>Thymeleaf</li>
                     <li>JSON</li>
                     <li>API</li>
-                    <li>React</li>
                     <li>TDD</li>
                     <li>BDD</li>
                     <li>Agile (Scrum)</li>
@@ -129,6 +136,7 @@
                     <li>GitHub</li>
                     <li>IntelliJ</li>
                     <li>Visual Studio Code</li>
+                    <li>Kanban Board</li>
                     <li>Clean Code</li>
                     <li>Accessible Web Design</li>
                     <li>Responsive Design Techniques</li>
@@ -153,8 +161,8 @@
             <br>
             <br>
             <footer>
-                <p>© We Can Code IT 2021 &nbsp;
-                    <em>L</em><sup>2</sup> Solutions. All rights reserved.
+                <p>© We Can Code IT 2021 <br>
+                    <em>L</em><sup>2</sup> Solutions. <br>All rights reserved.
                 </p>
             </footer>
         </div>
