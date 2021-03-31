@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 .item7 > img,
 h3,
 h4 {
@@ -112,6 +112,7 @@ a {
   text-align: left;
   font-size: 1em;
   margin-top: 20%;
+  margin-left: 20%;
 }
 #logo {
   width: 150px;
@@ -120,31 +121,25 @@ a {
   border-radius: 10%;
 }
 /* .item2,
-.item3,
-.item4,
-.item5,
-.item6,
 .item7,
 .item8 {
   border: #000 solid 2px;
 } */
 
-.item2 > img,
-.item3 > img {
+.item2 > img {
   width: 400px;
   height: 300px;
   border-radius: 10px;
   box-sizing: border-box;
 }
-.item2 > img:hover,
-.item3 > img:hover {
+.item2 > img:hover {
   width: 600px;
   height: auto;
 }
 
-.item7 > img,
-.item8 {
+.item7 > img {
   margin-top: 25px;
+  margin-right: 0;
 }
 .skills {
   list-style-type: circle;
@@ -169,14 +164,14 @@ footer {
   letter-spacing: 0.5em;
   animation: spacing 5s ease-in;
 }
-.item4,
-.item5 {
+
+/* .item5 {
   flex: 0 0 auto;
-}
-.item4 > img,
+} */
+/* 
 .item5 > img {
   margin-right: 15px;
-}
+} */
 
 .slider {
   margin: 50px auto;

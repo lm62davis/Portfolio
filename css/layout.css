@@ -9,20 +9,9 @@
 .item2 {
   grid-area: recentApps;
 }
-/* Boot Camp Blog and Fizz Buzz Qix  */
-.item3 {
-  grid-area: prevApps;
-}
-/* Franklin Castle */
-.item4 {
-  grid-area: fcWebsite;
-}
-/* Kaufman website */
-.item5 {
-  grid-area: ktWebsite;
-}
+
 /* Main - proficiencies */
-.item6 {
+.main {
   grid-area: main;
 }
 /* My photo */
@@ -35,11 +24,10 @@
 .grid-container {
   display: grid;
   grid-template-areas:
-    "header header header header header header"
-    "recentApps recentApps recentApps recentApps main right"
-    "prevApps prevApps prevApps prevApps main right"
-    "prevApps prevApps prevApps prevApps main right"
-    "fcWebsite fcWebsite ktWebsite ktWebsite ktWebsite footer";
+    'header header header header'
+    'recentApps recentApps main right'
+    'prevApps prevApps main right'
+    'prevApps prevApps main footer';
   justify-content: space-evenly;
   align-content: space-between;
   grid-gap: 5px;
